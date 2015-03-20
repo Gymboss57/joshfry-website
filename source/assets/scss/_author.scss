@@ -1,0 +1,88 @@
+// -------------------------------------------------------------------
+// Author
+// -------------------------------------------------------------------
+
+.container {
+  @include outer-container;
+  padding: 0 $base_line_height;
+}
+
+body {
+  background-color: #fff;
+}
+
+.site-nav {
+  @include span-columns(4);
+  height: 100%;
+  margin-top: 185px;
+}
+
+.site-nav ul li {
+  font-size: 18px;
+  text-align: right;
+  list-style-type: none;
+  display: block;
+  margin: 20px 0;
+  margin-right: 80px;
+  }
+
+.site-nav a {
+  color: rgba(255, 0, 255, 1);
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.site-nav a:hover {
+  color: #00D5FF;
+  text-shadow: 5px 5px 3px rgba(255, 0, 255, 0.5);
+}
+
+.site-header {
+  @include span-columns(8);
+  float: right;
+}
+
+.site-header img {
+  text-align: left;
+  display: inline-block;
+  float: left;
+}
+
+.site-header h1 {
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.site-header h1 a {
+  font-weight: 700;
+  color: #00D5FF;
+  text-shadow: 3px 1px 3px rgba(255, 0, 255, 0.3);
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.site-header h1 a:hover {
+  text-shadow: 4.5px 1px 0px rgba(255, 0, 255, 0.3);
+}
+
+// #FF4AC9
+.site-header p {
+  margin: 0 0;
+}
+
+.home-content {
+  @include span-columns(8);
+  text-align: left;
+  display: inline;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.home-content p {
+  color: #999;
+  margin-bottom: 0px;
+}
