@@ -8,7 +8,8 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: rgba(193, 193, 197, 0.0);
+  height: 100%;
 }
 
 .site-nav {
@@ -58,7 +59,7 @@ body {
 .site-header h1 a {
   font-weight: 700;
   color: #00D5FF;
-  text-shadow: 3px 1px 3px rgba(255, 0, 255, 0.3);
+  text-shadow: 3px 1px 0px rgba(255, 0, 255, 0.3);
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
@@ -71,7 +72,10 @@ body {
 
 // #FF4AC9
 .site-header p {
+  color: #999;
   margin: 0 0;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .home-content {
@@ -83,6 +87,45 @@ body {
 }
 
 .home-content p {
-  color: #999;
+  color: #777;
   margin-bottom: 0px;
 }
+
+.social {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.social ul {
+  padding-left: 0;
+}
+
+.social ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 5px 0;
+}
+
+.social a {
+  color: #666;
+  background-color: rgba(122, 125, 129, 0.5);
+  padding: 5px 10px;
+  border-radius: 25px;
+  box-shadow: 4.5px 3px 0px  rgba(0, 150, 255, 0.5);
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.social a:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(122, 125, 129, 0.9);
+  box-shadow: 4.5px 3px 0px   rgba(0, 255, 105, 0.6);
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
