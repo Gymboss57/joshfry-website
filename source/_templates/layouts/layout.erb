@@ -17,30 +17,43 @@
   <!--<script src="/assets/js/libs/modernizr-custom.js"></script>-->
 </head>
 <body class="<%= page_classes %>">
-  <div id="wrapper">
-  <header class="site-header" role="banner">
-    <div class="container">
-      <div style="width: 150px">
-        <img src="/assets/img/josh-standard-trans.png" alt="">
-      </div>
+  <div class="left">
+    <header class="site-header" role="banner">
+      <img src="/assets/img/josh-standard-trans.png" alt="">
       <h1 class="j">
         <a href="/">JOSH FRY</a>
       </h1>
         <p>Web developer and designer</p>
-  </header>
-    <nav>
-      <div class="site-nav">
-        <ul>
-          <li><a href="/blog">BLOG</a></li>
-          <li><a href="">WORK</a></li>
-          <li><a href="">ABOUT</a></li>
-          <li><a href="">CONTACT</a></li>
-        </ul>
-      </div>
+    </header>
+    <nav class="social">
+    <ul>
+      <li><a href="http://twitter.com/joshfry" class="twitter" target="_blank">
+        <i class="fa fa-twitter"></i>
+        <span>Twitter</span></a>
+      </li>
+      <li><a href="http://github.com/joshfry" class="github" target="_blank">
+        <i class="fa fa-github"></i>
+        <span>GitHub</span></a>
+      </li>
+      <li><a href="http://codepen.io/joshfry" class="codepen" target="_blank">
+        <i class="fa fa-codepen"></i>
+        <span>Codepen</span></a>
+      </li>
+      <li><a href="https://dribbble.com/joshfry" class="dribbble" target="_blank">
+        <i class="fa fa-dribbble"></i>
+        <span>Dribbble</span></a>
+      </li>
+      <li><a href="https://www.facebook.com/josh.fry.35513" class="facebook" target="_blank">
+        <i class="fa fa-facebook"></i>
+        <span>Facebook</span></a>
+      </li>
+    </ul>
+    </nav>
+    <div class="copyright">
+      <p>&copy; <%= Time.now.year %> | <a href="https://twitter.com/joshfry">JoshFry</a></p>
     </div>
-</div>
+  </div>
 
-  </nav>
   <div class="container">
   <%= yield %>
   </div>
@@ -48,30 +61,7 @@
   <%= javascript_include_tag  "all" %>
   <%= yield_content :js %>
 
-<nav class="social">
-  <ul>
-    <li><a href="http://twitter.com/joshfry" class="twitter" target="_blank">
-      <i class="fa fa-twitter"></i>
-      <span>Twitter</span></a>
-    </li>
-    <li><a href="http://github.com/joshfry" class="github" target="_blank">
-      <i class="fa fa-github"></i>
-      <span>GitHub</span></a>
-    </li>
-    <li><a href="http://codepen.io/joshfry" class="codepen" target="_blank">
-      <i class="fa fa-codepen"></i>
-      <span>Codepen</span></a>
-    </li>
-    <li><a href="https://dribbble.com/joshfry" class="dribbble" target="_blank">
-      <i class="fa fa-dribbble"></i>
-      <span>Dribbble</span></a>
-    </li>
-    <li><a href="https://www.facebook.com/josh.fry.35513" class="facebook" target="_blank">
-      <i class="fa fa-facebook"></i>
-      <span>Facebook</span></a>
-    </li>
-  </ul>
-</nav>
+
 </div>
 
 </body>

@@ -12,51 +12,34 @@ body {
   height: 100%;
 }
 
-.site-nav {
-  @include span-columns(4);
-  height: 100%;
-  margin-top: 185px;
+.left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 420px;
 }
 
-.site-nav ul li {
-  font-size: 18px;
-  text-align: right;
-  list-style-type: none;
-  display: block;
-  margin: 20px 0;
-  margin-right: 80px;
-  }
-
-.site-nav a {
-  color: rgba(255, 0, 255, 1);
-  -webkit-transition: 0.3s ease-in-out;
-  -moz-transition: 0.3s ease-in-out;
-  -o-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-.site-nav a:hover {
-  color: #00D5FF;
-  text-shadow: 5px 5px 3px rgba(255, 0, 255, 0.5);
+.right {
+  margin-left: 220px;
 }
 
 .site-header {
-  @include span-columns(8);
-  float: right;
+  padding-left: 40px;
+
 }
 
 .site-header img {
-  text-align: left;
-  display: inline-block;
-  float: left;
+  height: 150px;
+  display: block;
 }
 
 .site-header h1 {
-  margin-top: 50px;
   margin-bottom: 0;
 }
 
 .site-header h1 a {
+  text-align: center;
   font-weight: 700;
   color: #00D5FF;
   text-shadow: 3px 1px 0px rgba(255, 0, 255, 0.3);
@@ -78,41 +61,29 @@ body {
   font-weight: 500;
 }
 
-.home-content {
-  @include span-columns(8);
-  text-align: left;
-  display: inline;
-  margin-top: 30px;
-  margin-left: 20px;
-}
-
-.home-content p {
-  color: #777;
-  margin-bottom: 0px;
-}
-
 .social {
   text-align: center;
-  margin-top: 70px;
-  @include media(60em) {
-    margin-top: 120px;
-  }
+  margin-top: 40px;
 }
 
 .social ul {
-  padding-left: 0;
+  padding: 0 40px;
+  height: 100%;
+  width: 100%;
 }
 
 .social ul li {
   list-style-type: none;
-  display: inline-block;
-  margin: 0 10px;
-  padding: 5px 0;
+  text-align: center;
+  display: block;
+  padding: 7px 0;
+
 }
 
 .social a {
   color: #666;
-  background-color: rgba(122, 125, 129, 0.5);
+  background-color: rgba(0, 255, 105, 0.6);
+  display: block;
   padding: 5px 10px;
   border-radius: 25px;
   box-shadow: 4.5px 3px 0px rgba(0, 150, 255, 0.5);
@@ -124,7 +95,7 @@ body {
 
 .social a:hover {
   color: rgba(255, 255, 255, 1);
-  background-color: rgba(122, 125, 129, 0.9);
+  background-color: rgba(0, 150, 255, 0.5);
   box-shadow: 4.5px 3px 0px rgba(0, 255, 105, 0.6);
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
@@ -132,14 +103,30 @@ body {
   transition: 0.3s ease-in-out;
 }
 
+.copyright {
+  padding-top: 80px;
+  padding-left: 60px;
+}
+
+.copyright a {
+  color: rgba(0, 150, 255, 1);
+}
+
+
 // Blog page css
 
-.blog-content {
-  @include span-columns(8);
+.home-content {
   text-align: left;
-  display: block;
-  margin-top: 30px;
-  margin-left: 20px;
+  display: inline;
+}
+
+.home-content p {
+  color: #777;
+  margin-bottom: 0px;
+}
+
+.blog-content {
+  text-align: left;
 }
 
 .blog-content ul li {
@@ -167,7 +154,6 @@ body {
 .blog-content li a p {
   color: #777;
 }
-
 
 
 
