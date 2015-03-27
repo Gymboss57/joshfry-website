@@ -17,32 +17,37 @@ body {
   top: 0;
   left: 0;
   bottom: 0;
-  right: 420px;
+  // right: 420px;
+  right: 60%;
+  background-image: url(/assets/img/80spattern.jpg);
+  background-position: left;
+  background-size: 205px;
 }
 
 .right {
-  margin-left: 220px;
+  margin-left: 37%;
 }
 
 .site-header {
-  padding-left: 40px;
+  padding: 0 20%;
 
 }
 
 .site-header img {
   height: 150px;
-  display: block;
+  display: inline;
+  margin-left: 28%;
 }
 
 .site-header h1 {
   margin-bottom: 0;
+  text-align: center;
 }
 
 .site-header h1 a {
-  text-align: center;
   font-weight: 700;
-  color: #00D5FF;
-  text-shadow: 3px 1px 0px rgba(255, 0, 255, 0.3);
+  color: rgba(255, 255, 44, 1);
+  text-shadow: 4px 1px 0px #C145FF;
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
@@ -50,15 +55,16 @@ body {
 }
 
 .site-header h1 a:hover {
-  text-shadow: 4.5px 1px 0px rgba(255, 0, 255, 0.3);
+  text-shadow: 4.5px 1px 0px rgba(255, 0, 255, 0.4);
 }
 
 // #FF4AC9
 .site-header p {
-  color: #999;
-  margin: 0 0;
+  color: #444;
   font-size: 18px;
   font-weight: 500;
+  text-align: center;
+  margin: 0;
 }
 
 .social {
@@ -81,12 +87,12 @@ body {
 }
 
 .social a {
-  color: #666;
-  background-color: rgba(0, 255, 105, 0.6);
+  color: #444;
+  background-color:rgba(255, 255, 44, 1);
   display: block;
   padding: 5px 10px;
   border-radius: 25px;
-  box-shadow: 4.5px 3px 0px rgba(0, 150, 255, 0.5);
+  box-shadow: 4.5px 3px 0px rgba(0, 150, 255, 1);
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
@@ -95,8 +101,8 @@ body {
 
 .social a:hover {
   color: rgba(255, 255, 255, 1);
-  background-color: rgba(0, 150, 255, 0.5);
-  box-shadow: 4.5px 3px 0px rgba(0, 255, 105, 0.6);
+  background-color: rgba(0, 150, 255, 1);
+  box-shadow: 4.5px 3px 0px rgba(0, 255, 105, 1);
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
@@ -105,7 +111,7 @@ body {
 
 .copyright {
   padding-top: 80px;
-  padding-left: 60px;
+  padding-left: 28%;
 }
 
 .copyright a {
