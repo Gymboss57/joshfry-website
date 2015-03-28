@@ -13,19 +13,60 @@ body {
 }
 
 .left {
+  position: top;
+  top: 20%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url(/assets/img/80spattern.jpg);
+  background-position: left;
+  background-size: 205px;
+  @include media(25em) {
+    padding: 0 15%;
+  }
+  @include media(35em) {
+    padding: 0 20%;
+  }
+  @include media(40em) {
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   // right: 420px;
   right: 60%;
-  background-image: url(/assets/img/80spattern.jpg);
-  background-position: left;
-  background-size: 205px;
+  padding: 0;
+}
+  @include media(50em) {
+    right: 65%;
+  }
+  @include media(60em) {
+    right: 70%;
+  }
+  @include media(70em) {
+    right: 75%;
+  }
+  @include media(80em) {
+    right: 80%;
+  }
 }
 
 .right {
-  margin-left: 37%;
+  margin: 0 auto;
+  @include media(40em) {
+    margin-left: 36%;
+  }
+  @include media(50em) {
+    margin-left: 33%;
+  }
+  @include media(60em) {
+    margin-left: 26%;
+  }
+  @include media(70em) {
+    margin-left: 17%;
+  }
+  @include media(80em) {
+    margin-left: 5%;
+  }
 }
 
 .site-header {
@@ -35,13 +76,19 @@ body {
 
 .site-header img {
   height: 150px;
-  display: inline;
-  margin-left: 28%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
 }
 
 .site-header h1 {
+  margin-top: 0;
   margin-bottom: 0;
   text-align: center;
+  @include media(40em) {
+  margin-bottom: 0;
+  margin-top: 20px;
+  }
 }
 
 .site-header h1 a {
@@ -64,7 +111,11 @@ body {
   font-size: 18px;
   font-weight: 500;
   text-align: center;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: -35px;
+  @include media(40em) {
+    margin-bottom: 0;
+  }
 }
 
 .social {
@@ -102,7 +153,7 @@ body {
 .social a:hover {
   color: rgba(255, 255, 255, 1);
   background-color: rgba(0, 150, 255, 1);
-  box-shadow: 4.5px 3px 0px rgba(0, 255, 105, 1);
+  box-shadow: 4.5px 3px 0px rgba(255, 255, 44, 1);
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
@@ -110,8 +161,13 @@ body {
 }
 
 .copyright {
-  padding-top: 80px;
+  padding-top: 0px;
   padding-left: 28%;
+  padding-bottom: 3px;
+  @include media(40em) {
+  padding-top: 80px;
+
+}
 }
 
 .copyright a {
