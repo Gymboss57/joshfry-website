@@ -193,15 +193,18 @@ body {
 
 .blog-content ul li {
   list-style-type: none;
+
 }
 
 .blog-content ul li a h2 {
+  margin-top: 0;
+  margin-bottom: 0;
   color: rgba(0, 150, 255, 1);
   text-shadow: 0px 0px 0px rgba(0, 255, 105, 0.4);
-  -webkit-transition: 0.6s ease-in-out;
-  -moz-transition: 0.6s ease-in-out;
-  -o-transition: 0.6s ease-in-out;
-  transition: 0.6s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .blog-content ul li a h2:hover {
@@ -213,11 +216,15 @@ body {
   color: #777;
 }
 
-.blog-content li a p {
+.blog-content li p {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: #777;
 }
 
-
+.blog-content ul li a time {
+  font-weight: bold;
+}
 
 
 
